@@ -28,3 +28,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["linear_algebra", "utils"]
