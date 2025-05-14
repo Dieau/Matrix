@@ -1996,19 +1996,18 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 ```
 
 2.  **Apply elementary row operations:**
+```math
+    R_1 \rightarrow \frac{1}{4}R_1:
 
-    * $R_1 \rightarrow \frac{1}{4}R_1$:
-
-    ```math
+    
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         2 & 6 & 0 & 1
         \end{array} \right]
-    ```
+```
+```math
+    R_2 \rightarrow R_2 - 2R_1:
 
-    * $R_2 \rightarrow R_2 - 2R_1$:
-
-        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         0 & 6 - 2(7/4) & 0 - 2(1/4) & 1 - 2(0)
@@ -2017,20 +2016,18 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         1 & 7/4 & 1/4 & 0 \\
         0 & 5/2 & -1/2 & 1
         \end{array} \right]
-        ```
+```
+```math
+    R_2 \rightarrow \frac{2}{5}R_2:
 
-    * $R_2 \rightarrow \frac{2}{5}R_2$:
-
-        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        ```
+```
+```math
+    R_1 \rightarrow R_1 - \frac{7}{4}R_2:
 
-    * $R_1 \rightarrow R_1 - \frac{7}{4}R_2$:
-
-        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 - 7/4(1) & 1/4 - 7/4(-1/5) & 0 - 7/4(2/5) \\
         0 & 1 & -1/5 & 2/5
@@ -2039,9 +2036,7 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         1 & 0 & 1/4 + 7/20 & -14/20 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        ```
 
-        ```math
         = \left[ \begin{array}{cc|cc}
         1 & 0 & 5/20 + 7/20 & -7/10 \\
         0 & 1 & -2/10 & 4/10
@@ -2054,16 +2049,17 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         1 & 0 & 3/5 & -7/10 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        ```
+```
 
 3.  **The right side is the inverse $A^{-1}$:**
-    ```math
+```math
     A^{-1} = \begin{pmatrix} 3/5 & -7/10 \\ -1/5 & 2/5 \end{pmatrix} = \begin{pmatrix} 0.6 & -0.7 \\ -0.2 & 0.4 \end{pmatrix}
-    ```
+```
 
 #### 3x3 Matrix (Using Gauss-Jordan Elimination)
-
-Let $A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 5 & 6 & 0 \end{pmatrix}$.
+```math
+    Let A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 5 & 6 & 0 \end{pmatrix}.
+```
 
 <details>
 <summary><b>Click to view 3x3 Inverse Calculation Steps (Gauss-Jordan)</b></summary>
