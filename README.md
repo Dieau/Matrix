@@ -2067,11 +2067,11 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 1.  **Form the augmented matrix $[A | I]$:**
 $$
 
-    \left[ \begin{array}{ccc|ccc}
-    1 & 2 & 3 & 1 & 0 & 0 \\
-    0 & 1 & 4 & 0 & 1 & 0 \\
-    5 & 6 & 0 & 0 & 0 & 1
-    \end{array} \right]
+\left[ \begin{array}{ccc|ccc} 
+1 & 2 & 3 & 1 & 0 & 0 \\ 
+0 & 1 & 4 & 0 & 1 & 0 \\ 
+5 & 6 & 0 & 0 & 0 & 1 
+\end{array} \right]
 
 $$
 
