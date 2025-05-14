@@ -306,9 +306,9 @@ When you have a vector defined by two points
 $A(x_1, y_1)$  and $B(x_2, y_2)$, 
 the most common way to find its components **(y-vertical-component and x-horizontal-component)** (in 2D) is to subtract the coordinates of \( A \) from the coordinates of \( B \). In other words:
 
-$$
+```math
 \overrightarrow{AB} = (\,x_2 - x_1, \; y_2 - y_1\,).
-$$
+```
 
 - **(horizontal) X-component:** $x_2 - x_1$
 - **(Vectical)Y-component:** $y_2 - y_1$
@@ -348,15 +348,15 @@ For a vector $\mathbf{v} = [x, y]$ in 2D or $\mathbf{v} = [x, y, z]$ in 3D, the 
 
 - **2D Vector:**
 
-$$
+```math
 ||\mathbf{v}|| = \sqrt{x^2 + y^2}
-$$
+```
 
 - **3D Vector:**
 
-$$
+```math
 ||\mathbf{v}|| = \sqrt{x^2 + y^2 + z^2}
-$$
+```
 
 #### d. Example Calculation
 
@@ -364,17 +364,17 @@ $$
     
     Consider the vector $\mathbf{v} = [3, 4] $.
     
-$$
+```math
 ||\mathbf{v}|| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
-$$
+```
 
 - **3D Example:**
     
     Consider the vector $\mathbf{u} = [1, 2, 2] $.
     
-$$
+```math
 ||\mathbf{u}|| = \sqrt{1^2 + 2^2 + 2^2} = \sqrt{1 + 4 + 4} = \sqrt{9} = 3
-$$
+```
 
 #### e. Visual Representation
 
@@ -409,12 +409,12 @@ Imagine an Excel spreadsheet where each cell contains a number. This grid of num
 ### c. Mathematical Representation
 A matrix is written using brackets with rows and columns. For example, a 2x3 matrix (2 rows and 3 columns) looks like this:
 
-$$
+```math
 \begin{bmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 \end{bmatrix}
-$$
+```
 
 ### d. Visual Representation
 Think of a matrix as a table:
@@ -440,13 +440,13 @@ Matrices are essential in computer graphics (transforming images), machine learn
 #### Vector Addition
 To add two vectors, add their corresponding components:
 
-$$
+```math
 \begin{aligned}
 \mathbf{u} &= [2, 3] \\
 \mathbf{v} &= [4, 1] \\
 \mathbf{u} + \mathbf{v} &= [2+4, 3+1] = [6, 4]
 \end{aligned}
-$$
+```
 
 #### Visual Representation
 
@@ -458,23 +458,23 @@ $$
 #### Vector Subtraction
 To subtract vectors, subtract their corresponding components:
 
-$$
+```math
 \begin{aligned}
 \mathbf{u} &= [5, 7] \\
 \mathbf{v} &= [2, 3] \\
 \mathbf{u} - \mathbf{v} &= [5-2, 7-3] = [3, 4]
 \end{aligned}
-$$
+```
 
 Here's another example with a negative vector:
 
-$$
+```math
 \begin{aligned}
 \mathbf{u} &= [-2, 4] \\
 \mathbf{v} &= [3, -1] \\
 \mathbf{u} - \mathbf{v} &= [-2-3, 4-(-1)] = [-5, 5]
 \end{aligned}
-$$
+```
 
 #### Visual Representation
 
@@ -497,16 +497,16 @@ $$
 ### Mathematical Representation
 For a scalar $a$ and vector $\mathbf{v}$:
 
-$$
+```math
 a\mathbf{v} = [ax_1, ax_2, ..., ax_n]
-$$
+```
 
 ### Example
 Given vector $\mathbf{v} = [2, 3]$ and scalar $a = 4$:
 
-$$
+```math
 4 \times [2, 3] = [8, 12]
-$$
+```
 
 ### Visual Representation
 <details>
@@ -525,7 +525,7 @@ $$
 ### Addition Example
 Given two 2×2 matrices:
 
-$$
+```math
 A = \begin{bmatrix}
 1 & 2 \\
 3 & 4 \\
@@ -534,11 +534,11 @@ B = \begin{bmatrix}
 5 & 6 \\
 7 & 8 \\
 \end{bmatrix}
-$$
+```
 
 Add corresponding elements:
 
-$$
+```math
 A + B = \begin{bmatrix}
 1+5 & 2+6 \\
 3+7 & 4+8 \\
@@ -546,14 +546,14 @@ A + B = \begin{bmatrix}
 6 & 8 \\
 10 & 12 \\
 \end{bmatrix}
-$$
+```
 
 ### Subtraction Example
 Matrix subtraction can be expressed as: $A - B = A + (-1)⋅B$
 
 Given two 2×2 matrices:
 
-$$
+```math
 A = \begin{bmatrix}
 3 & 5 \\
 7 & 9 \\
@@ -562,20 +562,20 @@ B = \begin{bmatrix}
 1 & 2 \\
 4 & 6 \\
 \end{bmatrix}
-$$
+```
 
 First, calculate $(-1)⋅B$:
 
-$$
+```math
 (-1)⋅B = \begin{bmatrix}
 -1 & -2 \\
 -4 & -6 \\
 \end{bmatrix}
-$$
+```
 
 Then add $A$ and $(-1)⋅B$:
 
-$$
+```math
 A - B = \begin{bmatrix}
 3-1 & 5-2 \\
 7-4 & 9-6 \\
@@ -583,7 +583,7 @@ A - B = \begin{bmatrix}
 2 & 3 \\
 3 & 3 \\
 \end{bmatrix}
-$$
+```
 
 ### Key Properties
 
@@ -611,25 +611,25 @@ Given vectors and scalars:
 
 1. **Scale each vector by its corresponding scalar:**
 
-$$
+```math
 a \times \mathbf{u_1} = 2 \times [1, 0, 0] = [2, 0, 0]
-$$
+```
 
-$$
+```math
 b \times \mathbf{u_2} = 3 \times [0, 1, 0] = [0, 3, 0]
-$$
+```
 
 2. **Add the scaled vectors:**
 
-$$
+```math
 \text{Result} = [2, 0, 0] + [0, 3, 0] = [2, 3, 0]
-$$
+```
 
 So, the linear combination of the vectors $\mathbf{u_1}$ and $\mathbf{u_2}$ with scalars $a$ and $b$ is:
 
-$$
+```math
 \text{Result} = (2 \times [1, 0, 0]) + (3 \times [0, 1, 0]) = [2, 0, 0] + [0, 3, 0] = [2, 3, 0]
-$$
+```
 
 ### Real-World Applications
 
@@ -659,9 +659,9 @@ Linear combinations are crucial in:
 - Scalars: `λ = [10, -2, 0.5]`.
 - Result:
 
-$$
+```math
 (10 \times [1, 0, 0]) + (-2 \times [0, 1, 0]) + (0.5 \times [0, 0, 1]) = [10, -2, 0.5]
-$$
+```
 
 ### Efficiency
 
@@ -683,9 +683,9 @@ Linear interpolation (often abbreviated as "lerp") is a method of curve fitting 
 
 Linear interpolation connects two known points with a straight line and finds points along that line. The formula for linear interpolation between two points is:
 
-$$
+```math
 \text{lerp}(a, b, t) = a + t \times (b - a)
-$$
+```
 
 Where:
 - $a$ is the starting value
@@ -696,9 +696,9 @@ Where:
 
 If we want to find a point 30% of the way from 10 to 20:
 
-$$
+```math
 \text{lerp}(10, 20, 0.3) = 10 + 0.3 \times (20 - 10) = 10 + 0.3 \times 10 = 10 + 3 = 13
-$$
+```
 
 ### Visual Representation
 
@@ -714,22 +714,22 @@ Linear interpolation works with vectors by applying the formula to each componen
 
 For vectors $\mathbf{v_1} = [a_1, a_2, ..., a_n]$ and $\mathbf{v_2} = [b_1, b_2, ..., b_n]$:
 
-$$
+```math
 \text{lerp}(\mathbf{v_1}, \mathbf{v_2}, t) = [a_1 + t(b_1 - a_1), a_2 + t(b_2 - a_2), ..., a_n + t(b_n - a_n)]
-$$
+```
 
 ### Example with Vectors
 
 If $\mathbf{v_1} = [1, 2, 3]$ and $\mathbf{v_2} = [4, 5, 6]$ with $t = 0.5$:
 
-$$
+```math
 \begin{aligned}
 \text{lerp}(\mathbf{v_1}, \mathbf{v_2}, 0.5) &= [1 + 0.5(4-1), 2 + 0.5(5-2), 3 + 0.5(6-3)] \\
 &= [1 + 0.5 \times 3, 2 + 0.5 \times 3, 3 + 0.5 \times 3] \\
 &= [1 + 1.5, 2 + 1.5, 3 + 1.5] \\
 &= [2.5, 3.5, 4.5]
 \end{aligned}
-$$
+```
 
 ### Applications
 
@@ -770,17 +770,17 @@ The dot product is a fundamental operation between two vectors that results in a
 
 For two vectors $\mathbf{u} = [u_1, u_2, ..., u_n]$ and $\mathbf{v} = [v_1, v_2, ..., v_n]$, their dot product is:
 
-$$
+```math
 \mathbf{u} \cdot \mathbf{v} = u_1 \times v_1 + u_2 \times v_2 + ... + u_n \times v_n = \sum_{i=1}^{n} u_i v_i
-$$
+```
 
 ### Example Calculation
 
 If $\mathbf{u} = [1, 2, 3]$ and $\mathbf{v} = [4, 5, 6]$:
 
-$$
+```math
 \mathbf{u} \cdot \mathbf{v} = (1 \times 4) + ( 2 \times 5 )+ ( 3 \times 6) = 4 + 10 + 18 = 32
-$$
+```
 
 
 <details>
@@ -802,9 +802,9 @@ The magnitude (or length) of each vector directly affects the dot product value 
 
 Remember the formula for the dot product:
 
-$$
+```math
 \mathbf{u}\cdot\mathbf{v}=||\mathbf{u}||\times||\mathbf{v}||\times\cos(\theta)
-$$
+```
 
 Where:
 - $||\mathbf{u}||$ is the magnitude of vector u.
@@ -816,13 +816,13 @@ When vectors are perfectly aligned, the angle $\theta$ is $0^\circ$. The cosine 
 
 So, for perfectly aligned vectors, the formula simplifies to:
 
-$$
+```math
 \mathbf{u}\cdot\mathbf{v}=||\mathbf{u}||\times||\mathbf{v}||\times1
-$$
+```
 
-$$
+```math
 \mathbf{u}\cdot\mathbf{v}=||\mathbf{u}||\times||\mathbf{v}||
-$$
+```
 
 This means that for aligned vectors, the dot product is simply the product of their magnitudes.
 
@@ -840,9 +840,9 @@ So, the "number" for aligned vectors can go as high as the product of their magn
 
 The dot product has a geometric meaning:
 
-$$
+```math
 \mathbf{u} \cdot \mathbf{v} = ||\mathbf{u}|| \times ||\mathbf{v}|| \times \cos(\theta)
-$$
+```
 
 Where:
 - $||\mathbf{u}||$ and $||\mathbf{v}||$ are the magnitudes of the vectors
@@ -929,17 +929,17 @@ The norm of a vector, also called magnitude or length, measures the "size" of a 
 
 The L1 norm sums the absolute values of the vector components:
 
-$$
+```math
 ||\mathbf{v}||_1 = |v_1| + |v_2| + ... + |v_n| = \sum_{i=1}^{n} |v_i|
-$$
+```
 
 #### L2 Norm (Euclidean Norm)
 
 The L2 norm is the most common and represents the straight-line distance:
 
-$$
+```math
 ||\mathbf{v}||_2 = \sqrt{v_1^2 + v_2^2 + ... + v_n^2} = \sqrt{\sum_{i=1}^{n} v_i^2}
-$$
+```
 
 This is equivalent to $\sqrt{\mathbf{v} \cdot \mathbf{v}}$
 
@@ -947,9 +947,9 @@ This is equivalent to $\sqrt{\mathbf{v} \cdot \mathbf{v}}$
 
 The infinity norm takes the largest absolute value among components:
 
-$$
+```math
 ||\mathbf{v}||_{\infty} = \max(|v_1|, |v_2|, ..., |v_n|)
-$$
+```
 
 ### Example Calculations
 
@@ -1086,9 +1086,9 @@ Cosine similarity measures the cosine of the angle between two non-zero vectors 
 
 The cosine similarity between two vectors $\mathbf{u}$ and $\mathbf{v}$ is calculated using their dot product and magnitudes:
 
-$$
+```math
 \text{Cosine Similarity}(\mathbf{u}, \mathbf{v}) = \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{||\mathbf{u}|| \times ||\mathbf{v}||}
-$$
+```
 
 Where:
 - $\mathbf{u} \cdot \mathbf{v}$ is the dot product of vectors $\mathbf{u}$ and $\mathbf{v}$.
@@ -1109,20 +1109,20 @@ Cosine similarity focuses on the orientation (direction) of the vectors, not the
 Let $\mathbf{u} = [2, 1]$ and $\mathbf{v} = [3, 4]$.
 
 1.  **Calculate the dot product**:
-    $$
+    ```math
     \mathbf{u} \cdot \mathbf{v} = (2 \times 3) + (1 \times 4) = 6 + 4 = 10
-    $$
+    ```
 2.  **Calculate the magnitudes**:
-    $$
+    ```math
     ||\mathbf{u}|| = \sqrt{2^2 + 1^2} = \sqrt{4 + 1} = \sqrt{5}
-    $$
-    $$
+    ```
+    ```math
     ||\mathbf{v}|| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
-    $$
+    ```
 3.  **Calculate the cosine similarity**:
-    $$
+    ```math
     \cos(\theta) = \frac{10}{\sqrt{5} \times 5} = \frac{10}{5\sqrt{5}} = \frac{2}{\sqrt{5}} = \frac{2\sqrt{5}}{5} \approx 0.894
-    $$
+    ```
 The cosine similarity is approximately 0.894, indicating that the vectors point in roughly the same direction.
 
 ### Visual Representation
@@ -1159,9 +1159,9 @@ The cross product is an operation between two vectors in three-dimensional space
 
 For two vectors in 3D space, $\mathbf{u} = [u_1, u_2, u_3]$ and $\mathbf{v} = [v_1, v_2, v_3]$, their cross product $\mathbf{u} \times \mathbf{v}$ is defined as:
 
-$$
+```math
 \mathbf{u} \times \mathbf{v} = [u_2 v_3 - u_3 v_2, \,\, u_3 v_1 - u_1 v_3, \,\, u_1 v_2 - u_2 v_1]
-$$
+```
 
 
 ### Determinant Calculation Method
@@ -1173,13 +1173,13 @@ When using the determinant method to calculate the cross product, you can follow
 
 1. Set up the determinant:
    
-   $$
+   ```math
    \mathbf{u} \times \mathbf{v} = \begin{vmatrix}
    \mathbf{i} & \mathbf{j} & \mathbf{k} \\
    u_1 & u_2 & u_3 \\
    v_1 & v_2 & v_3 \\
    \end{vmatrix}
-   $$
+   ```
 
 2. Calculate each component using the minors of the first row:
 
@@ -1187,13 +1187,13 @@ When using the determinant method to calculate the cross product, you can follow
 
 3. This gives you the resulting vector:
    
-   $$
+   ```math
    \mathbf{u} \times \mathbf{v} = \begin{pmatrix}
    u_2v_3 - u_3v_2 \\
    u_3v_1 - u_1v_3 \\
    u_1v_2 - u_2v_1
    \end{pmatrix}
-   $$
+   ```
 
 </details>
 
@@ -1201,9 +1201,9 @@ When using the determinant method to calculate the cross product, you can follow
 
 -   **Direction**: The resulting vector $\mathbf{u} \times \mathbf{v}$ is orthogonal (perpendicular) to both $\mathbf{u}$ and $\mathbf{v}$. Its direction is determined by the right-hand rule.
 -   **Magnitude**: The magnitude of the cross product is related to the angle $\theta$ between the vectors:
-    $$
+    ```math
     ||\mathbf{u} \times \mathbf{v}|| = ||\mathbf{u}|| \times ||\mathbf{v}|| \times |\sin(\theta)|
-    $$
+    ```
     This magnitude is equal to the area of the parallelogram spanned by the vectors $\mathbf{u}$ and $\mathbf{v}$.
 
 [Click here to view the 3D Geometric Representation Online](https://www.desmos.com/3d/ag0twyzjye?lang=fr)
@@ -1213,23 +1213,23 @@ When using the determinant method to calculate the cross product, you can follow
 Let $\mathbf{u} = [1, 2, 3]$ and $\mathbf{v} = [3, 4, 5]$.
 
 Using the formula:
-$$
+```math
 \begin{aligned}
 \mathbf{u} \times \mathbf{v} &= [(u_2 v_3 - u_3 v_2), (u_3 v_1 - u_1 v_3), (u_1 v_2 - u_2 v_1)] \\
 &= [(2 \times 5 - 3 \times 4), (3 \times 3 - 1 \times 5), (1 \times 4 - 2 \times 3)] \\
 &= [10 - 12, 9 - 5, 4 - 6] \\
 &= [-2, 4, -2]
 \end{aligned}
-$$
+```
 The resulting vector $[-2, 4, -2]$ is perpendicular to both $[1, 2, 3]$ and $[3, 4, 5]$.
 
 To verify, we can check the dot products:
-$$
+```math
 [-2, 4, -2] \cdot [1, 2, 3] = (-2 \times 1) + (4 \times 2) + (-2 \times 3) = -2 + 8 - 6 = 0
-$$
-$$
+```
+```math
 [-2, 4, -2] \cdot [3, 4, 5] = (-2 \times 3) + (4 \times 4) + (-2 \times 5) = -6 + 16 - 10 = 0
-$$
+```
 Since the dot products are zero, the resulting vector is indeed orthogonal to both $\mathbf{u}$ and $\mathbf{v}$.
 
 ### Properties
@@ -1308,9 +1308,9 @@ A (m×n) × v (n×1) = w (m×1)
 
 The element $C_{ij}$ of the product matrix $C = AB$ is given by:
 
-$$
+```math
 C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
-$$
+```
 
 This means you multiply corresponding elements from the $i$-th row of $A$ and the $j$-th column of $B$ and sum the results.
 
@@ -1321,18 +1321,18 @@ Let $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ (a 2x2 matrix) and $B = \
 The product $C = AB$ will be a 2x2 matrix.
 
 -   **Element $C_{11}$**: (Row 1 of A) $\cdot$ (Column 1 of B)
-    $$ C_{11} = (1 \times 5) + (2 \times 7) = 5 + 14 = 19 $$
+    $C_{11} = (1 \times 5) + (2 \times 7) = 5 + 14 = 19$
 -   **Element $C_{12}$**: (Row 1 of A) $\cdot$ (Column 2 of B)
-    $$ C_{12} = (1 \times 6) + (2 \times 8) = 6 + 16 = 22 $$
+    $C_{12} = (1 \times 6) + (2 \times 8) = 6 + 16 = 22$
 -   **Element $C_{21}$**: (Row 2 of A) $\cdot$ (Column 1 of B)
-    $$ C_{21} = (3 \times 5) + (4 \times 7) = 15 + 28 = 43 $$
+    $ C_{21} = (3 \times 5) + (4 \times 7) = 15 + 28 = 43$
 -   **Element $C_{22}$**: (Row 2 of A) $\cdot$ (Column 2 of B)
-    $$ C_{22} = (3 \times 6) + (4 \times 8) = 18 + 32 = 50 $$
+    $C_{22} = (3 \times 6) + (4 \times 8) = 18 + 32 = 50$
 
 So, the resulting matrix is:
-$$
+```math
 C = AB = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}
-$$
+```
 
 ### Matrix-Vector Example
 
@@ -1341,14 +1341,14 @@ Let $M = \begin{pmatrix} 2 & 3 & 4 \\ 1 & 0 & 5 \end{pmatrix}$ (a 2x3 matrix) an
 The product $M\mathbf{v}$ will be a 2x1 vector.
 
 -   **First element**: (Row 1 of M) $\cdot$ $\mathbf{v}$
-    $$ (M\mathbf{v})_1 = (2 \times 6) + (3 \times 7) + (4 \times 8) = 12 + 21 + 32 = 65 $$
+    $(M\mathbf{v})_1 = (2 \times 6) + (3 \times 7) + (4 \times 8) = 12 + 21 + 32 = 65$
 -   **Second element**: (Row 2 of M) $\cdot$ $\mathbf{v}$
-    $$ (M\mathbf{v})_2 = (1 \times 6) + (0 \times 7) + (5 \times 8) = 6 + 0 + 40 = 46 $$
+    $(M\mathbf{v})_2 = (1 \times 6) + (0 \times 7) + (5 \times 8) = 6 + 0 + 40 = 46$
 
 So, the resulting vector is:
-$$
+```math
 M\mathbf{v} = \begin{pmatrix} 65 \\ 46 \end{pmatrix}
-$$
+```
 
 
 ### Properties
@@ -1386,9 +1386,9 @@ The trace of a square matrix is the sum of the elements on its main diagonal (fr
 
 For an $n \times n$ square matrix $A$, the trace, denoted as $\text{tr}(A)$, is defined as:
 
-$$
+```math
 \text{tr}(A) = \sum_{i=1}^{n} A_{ii} = A_{11} + A_{22} + \dots + A_{nn}
-$$
+```
 
 Where $A_{ii}$ represents the element in the $i$-th row and $i$-th column of matrix $A$.
 
@@ -1399,32 +1399,32 @@ Where $A_{ii}$ represents the element in the $i$-th row and $i$-th column of mat
 ### Example Calculation
 
 Let $A$ be a 3x3 matrix:
-$$
+```math
 A = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 9
 \end{pmatrix}
-$$
+```
 
 The main diagonal elements are $A_{11} = 1$, $A_{22} = 5$, and $A_{33} = 9$.
 
 The trace of $A$ is:
-$$
+```math
 \text{tr}(A) = 1 + 5 + 9 = 15
-$$
+```
 
 Another example with a 2x2 matrix:
-$$
+```math
 B = \begin{pmatrix}
 -2 & 0 \\
  3 & 7
 \end{pmatrix}
-$$
+```
 The trace of $B$ is:
-$$
+```math
 \text{tr}(B) = -2 + 7 = 5
-$$
+```
 
 ### Properties
 
@@ -1461,9 +1461,9 @@ The transpose of a matrix is an operation that flips the matrix over its main di
 
 For an $m \times n$ matrix $A$, its transpose, denoted as $A^T$, is an $n \times m$ matrix where the element in the $i$-th row and $j$-th column of $A^T$ is the element from the $j$-th row and $i$-th column of $A$.
 
-$$
+```math
 (A^T)_{ij} = A_{ji}
-$$
+```
 
 In simpler terms, the rows of $A$ become the columns of $A^T$, and the columns of $A$ become the rows of $A^T$.
 
@@ -1474,13 +1474,13 @@ In simpler terms, the rows of $A$ become the columns of $A^T$, and the columns o
 ### Example Calculation
 
 Let $A$ be a 3x2 matrix:
-$$
+```math
 A = \begin{pmatrix}
 1 & 2 \\
 3 & 4 \\
 5 & 6
 \end{pmatrix}
-$$
+```
 
 To find its transpose $A^T$, we swap rows and columns:
 -   The first row $[1, 2]$ becomes the first column.
@@ -1488,12 +1488,12 @@ To find its transpose $A^T$, we swap rows and columns:
 -   The third row $[5, 6]$ becomes the third column.
 
 The transpose $A^T$ is a 2x3 matrix:
-$$
+```math
 A^T = \begin{pmatrix}
 1 & 3 & 5 \\
 2 & 4 & 6
 \end{pmatrix}
-$$
+```
 
 ### Properties
 
@@ -1627,14 +1627,14 @@ Pivot positions (●):
 
 ### Example (Computing Rank)
 
-$$
+```math
 \begin{pmatrix}
 4 & 2 & 9 & 1 \\
 0 & 0 & 3 & 2 \\
 0 & 0 & 0 & 2 \\
 0 & 0 & 0 & 0
 \end{pmatrix}
-$$
+```
 <details>
 <summary><b><span style="color:red">Click to view REF Fundamentals Visualization</span></b></summary>
 <img src="./assets/fundamentals_Row_echelon.png" alt="Row Echelon Form Fundamentals" width="70%" height="70%" />
@@ -1655,31 +1655,31 @@ $$
 ### Example Calculation (Gaussian Elimination to REF)
 
 Let's transform the following matrix into Row Echelon Form:
-$$
+```math
 A = \begin{pmatrix}
 1 & 2 & 3 \\
 2 & 5 & 8 \\
 1 & 1 & 2
 \end{pmatrix}
-$$
+```
 
 1.  **Eliminate entries below the first pivot (A<sub>11</sub>=1):**
     *   Replace $R_2$ with $R_2 - 2R_1$:
-        $$ \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 1 & 1 & 2 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 1 & 1 & 2 \end{pmatrix}$
     *   Replace $R_3$ with $R_3 - R_1$:
-        $$ \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & -1 & -1 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & -1 & -1 \end{pmatrix}$
 2.  **Eliminate entries below the second pivot (A<sub>22</sub>=1):**
     *   Replace $R_3$ with $R_3 + R_2$:
-        $$ \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}$
 
 The resulting matrix is now in Row Echelon Form:
-$$
+```math
 A_{REF} = \begin{pmatrix}
 1 & 2 & 3 \\
 0 & 1 & 2 \\
 0 & 0 & 1
 \end{pmatrix}
-$$
+```
 It satisfies the conditions: no zero rows, and the leading entries (1, 1, 1) move progressively to the right.
 
 ### Reduced Row Echelon Form (RREF)
@@ -1690,26 +1690,26 @@ A matrix is in **Reduced Row Echelon Form (RREF)** if it meets the REF condition
 2.  **Zeroes Above Pivots:** Each leading 1 is the only non-zero entry in its column.
 
 Continuing the example to get RREF:
-$$
+```math
 A_{REF} = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}
-$$
+```
 1.  **Eliminate entries above the third pivot (A<sub>33</sub>=1):**
     *   $R_2 \rightarrow R_2 - 2R_3$:
-        $$ \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$
     *   $R_1 \rightarrow R_1 - 3R_3$:
-        $$ \begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$
 2.  **Eliminate entries above the second pivot (A<sub>22</sub>=1):**
     *   $R_1 \rightarrow R_1 - 2R_2$:
-        $$ \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $$
+        $\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$
 
 The resulting matrix is the identity matrix, which is in RREF.
-$$
+```math
 A_{RREF} = \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1
 \end{pmatrix}
-$$
+```
 
 <details>
 <summary><b><span style="color:red">Click to view RREF Example Details</span></b></summary>
@@ -1739,9 +1739,9 @@ A[pivot_row], A[pivot] = A[pivot], A[pivot_row]
 
 **LaTeX formula**:
 
-$$
+```math
 R_{i} \longleftrightarrow R_{j}
-$$
+```
 
 - *Description*: Swap row $R_i$ with row $R_j$.
 
@@ -1758,9 +1758,9 @@ A[pivot_row] = [x / pv for x in A[pivot_row]]
 
 **LaTeX formula**:
 
-$$
+```math
 R_i := \frac{1}{a_{ii}}\,R_i
-$$
+```
 
 - *Description*: Multiply row $R_i$ by the scalar $\frac{1}{a_{ii}}$, where $a_{ii}$ is the pivot element.
 
@@ -1777,9 +1777,9 @@ A[r] = [a_r - factor * a_p for a_r, a_p in zip(A[r], A[pivot_row])]
 
 **LaTeX formula**:
 
-$$
+```math
 R_j := R_j - \ell\,R_i
-$$
+```
 
 - *Description*: Subtract $\ell = R_j[\text{col}]$ times the pivot row $R_i$ from row $R_j$ to zero out the pivot column entry.
 
@@ -1844,17 +1844,17 @@ For example, the determinant of a transformation will be 3 if that transformatio
 
 *   **2x2 Matrix:**
     For a matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the determinant is:
-    $$ \det(A) = |A| = ad - bc $$
+    $\det(A) = |A| = ad - bc$
 
 *   **3x3 Matrix (Sarrus' Rule):**
     For a matrix $A = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}$, the determinant can be calculated using Sarrus' rule:
-    $$ \det(A) = a(ei - fh) - b(di - fg) + c(dh - eg) $$
+    $\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)$
 
 *   **General Method (Cofactor Expansion / Laplace Expansion):**
     The determinant can be calculated by expanding along any row or column. Expanding along the $i$-th row:
-    $$ \det(A) = \sum_{j=1}^{n} (-1)^{i+j} A_{ij} M_{ij} $$
+    $\det(A) = \sum_{j=1}^{n} (-1)^{i+j} A_{ij} M_{ij}$
     Expanding along the $j$-th column:
-    $$ \det(A) = \sum_{i=1}^{n} (-1)^{i+j} A_{ij} M_{ij} $$
+    $\det(A) = \sum_{i=1}^{n} (-1)^{i+j} A_{ij} M_{ij}$
     Where:
     -   $A_{ij}$ is the element in the $i$-th row and $j$-th column.
     -   $M_{ij}$ is the determinant of the $(n-1) \times (n-1)$ submatrix obtained by removing the $i$-th row and $j$-th column (called the minor).
@@ -1864,11 +1864,11 @@ For example, the determinant of a transformation will be 3 if that transformatio
 
 *   **2x2 Example:**
     Let $A = \begin{pmatrix} 3 & 8 \\ 4 & 6 \end{pmatrix}$.
-    $$ \det(A) = (3 \times 6) - (8 \times 4) = 18 - 32 = -14 $$
+    $\det(A) = (3 \times 6) - (8 \times 4) = 18 - 32 = -14$
 
 *   **3x3 Example (using cofactor expansion along the first row):**
     Let $B = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 4 & 5 \\ 1 & 0 & 6 \end{pmatrix}$.
-    $$
+    ```math
     \begin{aligned}
     \det(B) &= 1 \cdot C_{11} + 2 \cdot C_{12} + 3 \cdot C_{13} \\
     &= 1 \cdot (-1)^{1+1} \begin{vmatrix} 4 & 5 \\ 0 & 6 \end{vmatrix} + 2 \cdot (-1)^{1+2} \begin{vmatrix} 0 & 5 \\ 1 & 6 \end{vmatrix} + 3 \cdot (-1)^{1+3} \begin{vmatrix} 0 & 4 \\ 1 & 0 \end{vmatrix} \\
@@ -1877,7 +1877,7 @@ For example, the determinant of a transformation will be 3 if that transformatio
     &= 24 + 10 - 12 \\
     &= 22
     \end{aligned}
-    $$
+    ```
 
 ### Properties
 
@@ -1934,9 +1934,9 @@ The inverse of a matrix is a fundamental concept in linear algebra, analogous to
 
 An $n \times n$ square matrix $A$ is said to be **invertible** (or **non-singular**, or **non-degenerate**) if there exists an $n \times n$ matrix $A^{-1}$ such that:
 
-$$
+```math
 A A^{-1} = A^{-1} A = I_n
-$$
+```
 
 Where $I_n$ is the $n \times n$ identity matrix. The matrix $A^{-1}$ is called the **inverse** of $A$.
 
@@ -1964,14 +1964,14 @@ This method involves augmenting the matrix $A$ with the identity matrix $I_n$ to
 
 The inverse of a matrix $A$ can also be found using its determinant and adjugate (or classical adjoint):
 
-$$
+```math
 A^{-1} = \frac{1}{\det(A)} \text{adj}(A)
-$$
+```
 
 Where:
 -   $\det(A)$ is the determinant of $A$.
 -   $\text{adj}(A)$ is the adjugate of $A$, which is the transpose of the cofactor matrix $C$ of $A$.
-    $$ \text{adj}(A) = C^T $$
+    $\text{adj}(A) = C^T$
 -   The cofactor $C_{ij}$ of an element $A_{ij}$ is given by $C_{ij} = (-1)^{i+j} M_{ij}$, where $M_{ij}$ is the minor of $A_{ij}$ (the determinant of the submatrix obtained by deleting the $i$-th row and $j$-th column).
 
 This method is generally practical for 2x2 and 3x3 matrices. For larger matrices, it becomes computationally intensive.
@@ -1985,24 +1985,24 @@ This method transforms the augmented matrix $[A | I]$ into $[I | A^{-1}]$ using 
 Let $A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}$.
 
 1.  **Form the augmented matrix $[A | I]$:**
-    $$
+    ```math
     \left[ \begin{array}{cc|cc}
     4 & 7 & 1 & 0 \\
     2 & 6 & 0 & 1
     \end{array} \right]
-    $$
+    ```
 
 2.  **Apply elementary row operations:**
 
     *   $R_1 \rightarrow \frac{1}{4}R_1$:
-        $$
+        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         2 & 6 & 0 & 1
         \end{array} \right]
-        $$
+        ```
     *   $R_2 \rightarrow R_2 - 2R_1$:
-        $$
+        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         0 & 6 - 2(7/4) & 0 - 2(1/4) & 1 - 2(0)
@@ -2011,16 +2011,16 @@ Let $A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}$.
         1 & 7/4 & 1/4 & 0 \\
         0 & 5/2 & -1/2 & 1
         \end{array} \right]
-        $$
+        ```
     *   $R_2 \rightarrow \frac{2}{5}R_2$:
-        $$
+        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        $$
+        ```
     *   $R_1 \rightarrow R_1 - \frac{7}{4}R_2$:
-        $$
+        ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 - 7/4(1) & 1/4 - 7/4(-1/5) & 0 - 7/4(2/5) \\
         0 & 1 & -1/5 & 2/5
@@ -2029,8 +2029,8 @@ Let $A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}$.
         1 & 0 & 1/4 + 7/20 & -14/20 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        $$
-        $$
+        ```
+        ```math
         = \left[ \begin{array}{cc|cc}
         1 & 0 & 5/20 + 7/20 & -7/10 \\
         0 & 1 & -2/10 & 4/10
@@ -2043,12 +2043,12 @@ Let $A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}$.
         1 & 0 & 3/5 & -7/10 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
-        $$
+        ```
 
 3.  **The right side is the inverse $A^{-1}$:**
-    $$
+    ```math
     A^{-1} = \begin{pmatrix} 3/5 & -7/10 \\ -1/5 & 2/5 \end{pmatrix} = \begin{pmatrix} 0.6 & -0.7 \\ -0.2 & 0.4 \end{pmatrix}
-    $$
+    ```
 
 #### 3x3 Matrix (Using Gauss-Jordan Elimination)
 
@@ -2058,64 +2058,64 @@ Let $A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 5 & 6 & 0 \end{pmatrix}$.
 <summary><b>Click to view 3x3 Inverse Calculation Steps (Gauss-Jordan)</b></summary>
 
 1.  **Form the augmented matrix $[A | I]$:**
-    $$
+    ```math
     \left[ \begin{array}{ccc|ccc}
     1 & 2 & 3 & 1 & 0 & 0 \\
     0 & 1 & 4 & 0 & 1 & 0 \\
     5 & 6 & 0 & 0 & 0 & 1
     \end{array} \right]
-    $$
+    ```
 
 2.  **Apply elementary row operations to transform the left side to $I_3$:**
 
     *   Pivot on $A_{11}=1$. $R_1$ is good.
     *   Eliminate $A_{31}$: $R_3 \rightarrow R_3 - 5R_1$:
-        $$
+        ```math
         \left[ \begin{array}{ccc|ccc}
         1 & 2 & 3 & 1 & 0 & 0 \\
         0 & 1 & 4 & 0 & 1 & 0 \\
         0 & -4 & -15 & -5 & 0 & 1
         \end{array} \right]
-        $$
+        ```
     *   Pivot on $A_{22}=1$. $R_2$ is good.
     *   Eliminate $A_{12}$: $R_1 \rightarrow R_1 - 2R_2$:
-        $$
+        ```math
         \left[ \begin{array}{ccc|ccc}
         1 & 0 & -5 & 1 & -2 & 0 \\
         0 & 1 & 4 & 0 & 1 & 0 \\
         0 & -4 & -15 & -5 & 0 & 1
         \end{array} \right]
-        $$
+        ```
     *   Eliminate $A_{32}$: $R_3 \rightarrow R_3 + 4R_2$:
-        $$
+        ```math
         \left[ \begin{array}{ccc|ccc}
         1 & 0 & -5 & 1 & -2 & 0 \\
         0 & 1 & 4 & 0 & 1 & 0 \\
         0 & 0 & 1 & -5 & 4 & 1
         \end{array} \right]
-        $$
+        ```
     *   Pivot on $A_{33}=1$. $R_3$ is good.
     *   Eliminate $A_{13}$: $R_1 \rightarrow R_1 + 5R_3$:
-        $$
+        ```math
         \left[ \begin{array}{ccc|ccc}
         1 & 0 & 0 & -24 & 18 & 5 \\
         0 & 1 & 4 & 0 & 1 & 0 \\
         0 & 0 & 1 & -5 & 4 & 1
         \end{array} \right]
-        $$
+        ```
     *   Eliminate $A_{23}$: $R_2 \rightarrow R_2 - 4R_3$:
-        $$
+        ```math
         \left[ \begin{array}{ccc|ccc}
         1 & 0 & 0 & -24 & 18 & 5 \\
         0 & 1 & 0 & 20 & -15 & -4 \\
         0 & 0 & 1 & -5 & 4 & 1
         \end{array} \right]
-        $$
+        ```
 
 3.  **The right side is the inverse $A^{-1}$:**
-    $$
+    ```math
     A^{-1} = \begin{pmatrix} -24 & 18 & 5 \\ 20 & -15 & -4 \\ -5 & 4 & 1 \end{pmatrix}
-    $$
+    ```
 </details>
 
 ### Properties of Matrix Inverses
