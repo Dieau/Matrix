@@ -876,7 +876,7 @@ The dot product and cosine similarity are related mathematical operations that m
 #### Cosine Similarity 
 
 - **What it measures**: ONLY direction alignment between vectors
-- **Formula**: $\text{cosine\_similarity}(\mathbf{v},\mathbf{w}) = \frac{\mathbf{v} \cdot \mathbf{w}}{\|\mathbf{v}\| \|\mathbf{w}\|} = \cos\theta$
+- **Formula**: $\text{cosine\ similarity}(\mathbf{v},\mathbf{w}) = \frac{\mathbf{v} \cdot \mathbf{w}}{\|\mathbf{v}\| \|\mathbf{w}\|} = \cos\theta$
 - **Magnitude dependence**: None - scaling vectors doesn't change the result
 - **Range**: Always between -1 and +1
     - +1: vectors point in identical directions
