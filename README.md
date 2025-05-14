@@ -2051,11 +2051,6 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         \end{array} \right]
 ```
 
-3.  **The right side is the inverse $A^{-1}$:**
-```math
-    A^{-1} = \begin{pmatrix} 3/5 & -7/10 \\ -1/5 & 2/5 \end{pmatrix} = \begin{pmatrix} 0.6 & -0.7 \\ -0.2 & 0.4 \end{pmatrix}
-```
-
 # Ex 12
 
 ## Inverses
