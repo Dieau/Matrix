@@ -1988,12 +1988,10 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 ```
 
 1.  **Form the augmented matrix $[A | I]$:**
-    ```math
-    \left[ \begin{array}{cc|cc}
+    $\left[ \begin{array}{cc|cc}
     4 & 7 & 1 & 0 \\
     2 & 6 & 0 & 1
-    \end{array} \right]
-    ```
+    \end{array} \right]$
 
 2.  **Apply elementary row operations:**
 
