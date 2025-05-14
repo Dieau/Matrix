@@ -1999,12 +1999,12 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 
     * $R_1 \rightarrow \frac{1}{4}R_1$:
 
-        ```math
+    ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         2 & 6 & 0 & 1
         \end{array} \right]
-        ```
+    ```
 
     * $R_2 \rightarrow R_2 - 2R_1$:
 
