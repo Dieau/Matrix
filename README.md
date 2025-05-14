@@ -1983,8 +1983,9 @@ This method is generally practical for 2x2 and 3x3 matrices. For larger matrices
 This method transforms the augmented matrix $[A | I]$ into $[I | A^{-1}]$ using elementary row operations.
 
 #### 2x2 Matrix
-
-Let $A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}$.
+```math
+Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
+```
 
 1.  **Form the augmented matrix $[A | I]$:**
     ```math
