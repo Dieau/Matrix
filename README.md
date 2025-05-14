@@ -2066,11 +2066,13 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 
 1.  **Form the augmented matrix $[A | I]$:**
 $$
+
     \left[ \begin{array}{ccc|ccc}
     1 & 2 & 3 & 1 & 0 & 0 \\
     0 & 1 & 4 & 0 & 1 & 0 \\
     5 & 6 & 0 & 0 & 0 & 1
     \end{array} \right]
+
 $$
 
 2.  **Apply elementary row operations to transform the left side to $I_3$:**
@@ -2079,11 +2081,13 @@ $$
     * Eliminate $A_{31}$: $R_3 \rightarrow R_3 - 5R_1$:
 
 $$
+
     \left[ \begin{array}{ccc|ccc}
     1 & 2 & 3 & 1 & 0 & 0 \\
     0 & 1 & 4 & 0 & 1 & 0 \\
     0 & -4 & -15 & -5 & 0 & 1
     \end{array} \right]
+
 $$
 
     * Pivot on $A_{22}=1$. $R_2$ is good.
