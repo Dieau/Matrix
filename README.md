@@ -2065,74 +2065,74 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 <summary><b>Click to view 3x3 Inverse Calculation Steps (Gauss-Jordan)</b></summary>
 
 1.  **Form the augmented matrix $[A | I]$:**
-    ```math
+```math
     \left[ \begin{array}{ccc|ccc}
     1 & 2 & 3 & 1 & 0 & 0 \\
     0 & 1 & 4 & 0 & 1 & 0 \\
     5 & 6 & 0 & 0 & 0 & 1
     \end{array} \right]
-    ```
+```
 
 2.  **Apply elementary row operations to transform the left side to $I_3$:**
 
     * Pivot on $A_{11}=1$. $R_1$ is good.
     * Eliminate $A_{31}$: $R_3 \rightarrow R_3 - 5R_1$:
 
-    ```math
-        \left[ \begin{array}{ccc|ccc}
-        1 & 2 & 3 & 1 & 0 & 0 \\
-        0 & 1 & 4 & 0 & 1 & 0 \\
-        0 & -4 & -15 & -5 & 0 & 1
-        \end{array} \right]
-    ```
+```math
+    \left[ \begin{array}{ccc|ccc}
+    1 & 2 & 3 & 1 & 0 & 0 \\
+    0 & 1 & 4 & 0 & 1 & 0 \\
+    0 & -4 & -15 & -5 & 0 & 1
+    \end{array} \right]
+```
 
     * Pivot on $A_{22}=1$. $R_2$ is good.
     * Eliminate $A_{12}$: $R_1 \rightarrow R_1 - 2R_2$:
 
-        ```math
-        \left[ \begin{array}{ccc|ccc}
-        1 & 0 & -5 & 1 & -2 & 0 \\
-        0 & 1 & 4 & 0 & 1 & 0 \\
-        0 & -4 & -15 & -5 & 0 & 1
-        \end{array} \right]
-        ```
+```math
+    \left[ \begin{array}{ccc|ccc}
+    1 & 0 & -5 & 1 & -2 & 0 \\
+    0 & 1 & 4 & 0 & 1 & 0 \\
+    0 & -4 & -15 & -5 & 0 & 1
+    \end{array} \right]
+```
 
     * Eliminate $A_{32}$: $R_3 \rightarrow R_3 + 4R_2$:
 
-        ```math
-        \left[ \begin{array}{ccc|ccc}
-        1 & 0 & -5 & 1 & -2 & 0 \\
-        0 & 1 & 4 & 0 & 1 & 0 \\
-        0 & 0 & 1 & -5 & 4 & 1
-        \end{array} \right]
-        ```
+```math
+    \left[ \begin{array}{ccc|ccc}
+    1 & 0 & -5 & 1 & -2 & 0 \\
+    0 & 1 & 4 & 0 & 1 & 0 \\
+    0 & 0 & 1 & -5 & 4 & 1
+    \end{array} \right]
+```
 
     * Pivot on $A_{33}=1$. $R_3$ is good.
     * Eliminate $A_{13}$: $R_1 \rightarrow R_1 + 5R_3$:
 
-        ```math
-        \left[ \begin{array}{ccc|ccc}
-        1 & 0 & 0 & -24 & 18 & 5 \\
-        0 & 1 & 4 & 0 & 1 & 0 \\
-        0 & 0 & 1 & -5 & 4 & 1
-        \end{array} \right]
-        ```
+```math
+    \left[ \begin{array}{ccc|ccc}
+    1 & 0 & 0 & -24 & 18 & 5 \\
+    0 & 1 & 4 & 0 & 1 & 0 \\
+    0 & 0 & 1 & -5 & 4 & 1
+    \end{array} \right]
+```
 
     * Eliminate $A_{23}$: $R_2 \rightarrow R_2 - 4R_3$:
 
-        ```math
-        \left[ \begin{array}{ccc|ccc}
-        1 & 0 & 0 & -24 & 18 & 5 \\
-        0 & 1 & 0 & 20 & -15 & -4 \\
-        0 & 0 & 1 & -5 & 4 & 1
-        \end{array} \right]
-        ```
+```math
+    \left[ \begin{array}{ccc|ccc}
+    1 & 0 & 0 & -24 & 18 & 5 \\
+    0 & 1 & 0 & 20 & -15 & -4 \\
+    0 & 0 & 1 & -5 & 4 & 1
+    \end{array} \right]
+```
 
 3.  **The right side is the inverse $A^{-1}$:**
 
-    ```math
+```math
     A^{-1} = \begin{pmatrix} -24 & 18 & 5 \\ 20 & -15 & -4 \\ -5 & 4 & 1 \end{pmatrix}
-    ```
+```
 </details>
 
 ### Properties of Matrix Inverses
