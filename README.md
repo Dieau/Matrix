@@ -1988,21 +1988,26 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 ```
 
 1.  **Form the augmented matrix $[A | I]$:**
-    $\left[ \begin{array}{cc|cc}
+```math
+\left[ \begin{array}{cc|cc}
     4 & 7 & 1 & 0 \\
     2 & 6 & 0 & 1
-    \end{array} \right]$
+    \end{array} \right]
+```
 
 2.  **Apply elementary row operations:**
 
-    *   $R_1 \rightarrow \frac{1}{4}R_1$:
+    * $R_1 \rightarrow \frac{1}{4}R_1$:
+
         ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         2 & 6 & 0 & 1
         \end{array} \right]
         ```
-    *   $R_2 \rightarrow R_2 - 2R_1$:
+
+    * $R_2 \rightarrow R_2 - 2R_1$:
+
         ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
@@ -2013,14 +2018,18 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         0 & 5/2 & -1/2 & 1
         \end{array} \right]
         ```
-    *   $R_2 \rightarrow \frac{2}{5}R_2$:
+
+    * $R_2 \rightarrow \frac{2}{5}R_2$:
+
         ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 & 1/4 & 0 \\
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
         ```
-    *   $R_1 \rightarrow R_1 - \frac{7}{4}R_2$:
+
+    * $R_1 \rightarrow R_1 - \frac{7}{4}R_2$:
+
         ```math
         \left[ \begin{array}{cc|cc}
         1 & 7/4 - 7/4(1) & 1/4 - 7/4(-1/5) & 0 - 7/4(2/5) \\
@@ -2031,6 +2040,7 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
         0 & 1 & -1/5 & 2/5
         \end{array} \right]
         ```
+
         ```math
         = \left[ \begin{array}{cc|cc}
         1 & 0 & 5/20 + 7/20 & -7/10 \\
