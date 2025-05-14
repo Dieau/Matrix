@@ -2065,15 +2065,13 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 <summary><b>Click to view 3x3 Inverse Calculation Steps (Gauss-Jordan)</b></summary>
 
 1.  **Form the augmented matrix $[A | I]$:**
-$$
-
+```math
 \left[ \begin{array}{ccc|ccc} 
 1 & 2 & 3 & 1 & 0 & 0 \\ 
 0 & 1 & 4 & 0 & 1 & 0 \\ 
 5 & 6 & 0 & 0 & 0 & 1 
 \end{array} \right]
-
-$$
+```
 
 2.  **Apply elementary row operations to transform the left side to $I_3$:**
 
