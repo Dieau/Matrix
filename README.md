@@ -2065,7 +2065,7 @@ Let A = \begin{pmatrix} 4 & 7 \\ 2 & 6 \end{pmatrix}.
 <summary><b>Click to view 3x3 Inverse Calculation Steps (Gauss-Jordan)</b></summary>
 
 1.  **Form the augmented matrix $[A | I]$:**
-```math
+```latex
 \left[ \begin{array}{ccc|ccc} 
 1 & 2 & 3 & 1 & 0 & 0 \\ 
 0 & 1 & 4 & 0 & 1 & 0 \\ 
