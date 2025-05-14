@@ -1863,12 +1863,14 @@ For example, the determinant of a transformation will be 3 if that transformatio
 ### Example Calculation
 
 *   **2x2 Example:**
-    Let $A = \begin{pmatrix} 3 & 8 \\ 4 & 6 \end{pmatrix}$.
-    $\det(A) = (3 \times 6) - (8 \times 4) = 18 - 32 = -14$
+    ```math
+    Let A = \begin{pmatrix} 3 & 8 \\ 4 & 6 \end{pmatrix}.
+    \det(A) = (3 \times 6) - (8 \times 4) = 18 - 32 = -14
+    ```
 
 *   **3x3 Example (using cofactor expansion along the first row):**
-    Let $B = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 4 & 5 \\ 1 & 0 & 6 \end{pmatrix}$.
-    $
+    ```math
+    Let B = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 4 & 5 \\ 1 & 0 & 6 \end{pmatrix}.
     \begin{aligned}
     \det(B) &= 1 \cdot C_{11} + 2 \cdot C_{12} + 3 \cdot C_{13} \\
     &= 1 \cdot (-1)^{1+1} \begin{vmatrix} 4 & 5 \\ 0 & 6 \end{vmatrix} + 2 \cdot (-1)^{1+2} \begin{vmatrix} 0 & 5 \\ 1 & 6 \end{vmatrix} + 3 \cdot (-1)^{1+3} \begin{vmatrix} 0 & 4 \\ 1 & 0 \end{vmatrix} \\
@@ -1877,7 +1879,7 @@ For example, the determinant of a transformation will be 3 if that transformatio
     &= 24 + 10 - 12 \\
     &= 22
     \end{aligned}
-    $
+    ```
 
 ### Properties
 
